@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 14%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-texts: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-inputs: hsl(189, 41%, 97%);
+}
+
+body {
+  background: var(--light-grayish-cyan);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-grayish-cyan-texts);
+  letter-spacing: 1rem;
+}
+
+.card {
+  display: flex;
+  margin: 4rem auto;
+
+  background: white;
+  width: 1030px;
+  height: 510px;
+
+  border-radius: 24px;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+}
+
+.input-field > div {
+  display: flex;
+
+  color: var(--dark-grayish-cyan-texts);
+  margin: auto 8px;
+}
+
+.input-field input {
+  width: 450px;
+  height: 40px;
+
+  border: none;
+  background: var(--light-grayish-inputs);
+  border-radius: 4px;
+
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--very-dark-cyan);
+
+  padding: 1rem;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.input-field input:focus {
+  border: 2px solid var(--strong-cyan);
+}
+
+.input-field input:hover {
+  border: 2px solid var(--strong-cyan);
+}
+
+.input-field img {
+  position: absolute;
+  margin: 0.7rem 0rem 0rem 1rem;
+}
+
+.percent-buttons {
+  width: 550px;
+}
+
+.percent-buttons button,
+.percent-buttons input {
+  border-radius: 4px;
+  border: none;
+
+  width: 130px;
+  height: 50px;
+
+  margin: 0.5rem;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.percent-buttons button {
+  background: hsl(183, 100%, 15%);
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.percent-buttons input {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+
+  background: var(--light-grayish-inputs);
+
+  outline: none;
+}
+
+.percent-buttons input:focus {
+  text-align: right;
+  border: 2px solid var(--strong-cyan);
+  padding: 1rem;
+}
+
+.percent-buttons button:hover {
+  background: var(--strong-cyan);
+  color: hsl(183, 100%, 15%);
+}
+
+.percent-buttons input:hover {
+  border: 2px solid var(--strong-cyan);
+}
+
+.percent-tips h3 {
+  color: var(--dark-grayish-cyan-texts);
+  margin: auto 8px;
+}
+
+.percent-tips {
+  margin: 3rem auto;
+}
+
+.card-container-right {
+  width: 450px;
+  height: 450px;
+
+  border-radius: 12px;
+
+  background: hsl(183, 100%, 15%);
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.tip-amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount h1 {
+  font-size: 3rem;
+  color: var(--strong-cyan);
+}
+
+.tip-amount > div > h3 {
+  color: white;
+  font-weight: 400;
+}
+
+small {
+  font-weight: 700;
+  color: var(--dark-grayish-cyan-texts);
+}
+
+.tip-total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.tip-total h1 {
+  font-size: 3rem;
+  color: var(--strong-cyan);
+}
+
+.tip-total > div > h3 {
+  color: white;
+  font-weight: 400;
+}
+
+.reset {
+  width: 350px;
+  height: 50px;
+
+  background: var(--strong-cyan);
+
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+
+  margin-top: 8rem;
+}
+
+.reset:hover {
+  background: var(--light-grayish-cyan);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.error {
+  margin-left: 7rem;
+  color: red;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .card {
+    width: 900px;
+  }
+
+  .card-container-right {
+    width: 300px;
+  }
+
+  .tip-amount h1 {
+    font-size: 30px;
+  }
+
+  .tip-total h1 {
+    font-size: 30px;
+  }
+
+  .reset {
+    width: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  .card {
+    width: 375px;
+    height: 100%;
+  }
+  .card-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-field {
+    margin: 1rem;
+  }
+
+  .input-field input {
+    width: 320px;
+  }
+
+  .percent-buttons {
+    width: 350px;
+  }
+
+  .percent-buttons button,
+  .percent-buttons input {
+    width: 150px;
+  }
+
+  .card-container-right {
+    margin-top: 2rem;
+    height: 300px;
+  }
+
+  .tip-amount h1 {
+    font-size: 26px;
+  }
+
+  .tip-total h1 {
+    font-size: 26px;
+  }
+
+  .content-right input {
+    margin-top: 2rem;
+    width: 250px;
+  }
+
+  h4.attribution {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .input-field {
+    margin-left: 1rem;
+  }
+
+  .input-field input {
+    width: 300px;
+  }
+
+  .percent-buttons button,
+  .percent-buttons input {
+    width: 140px;
+  }
+
+  h4.attribution {
+    font-size: 10px;
+  }
+}
