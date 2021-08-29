@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/my-first-challenge-hnC_Gh2ph)
 - Live Site URL: [Site](https://tip-calulator-teste.netlify.app/)
 
 ## My process
